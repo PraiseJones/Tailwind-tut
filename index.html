@@ -33,14 +33,24 @@
   </head>
   <body>
     <main class="bg-ublue relative overflow-hidden">
+      <div class="lg:fixed lg:top-8 lg:right-40 lg:z-[1000] lg:bg-uorange lg:w-20 lg:h-20 lg:rounded-full lg:flex lg:justify-center lg:items-center lg:cursor-pointer lg:border-2 lg:border-uorange lg:hover:border-uwhite lg:transition-all lg:duration-700">
+        <label for="check">
+          <i
+            class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:text-4xl lg:cursor-pointer"
+            id="dd-icon"
+            ></i
+          >
+        </label>
+      </div>
+
       <header
-        class="flex justify-between lg:justify-evenly w-full items-center py-5 md:py-9 px-14 md:px-24 fixed lg:sticky top-0 z-[100] bg-ublue border-b-2 border-uwhite lg:border-none lg:bg-transparent"
+        class="flex justify-between lg:justify-evenly w-full items-center py-5 md:py-9 px-14 md:px-24 fixed lg:sticky top-0 z-[100] bg-ublue border-b border-uwhite lg:border-none lg:bg-transparent backdrop-blur-lg bg-opacity-65"
       >
         <a href="/index.html">
           <img
             src="/public/assets/images/ultra favicon2.png"
             alt="ultra logo"
-            class="w-12 md:w-16"
+            class="w-12 md:w-16 lg:ml-20"
           />
         </a>
 
@@ -62,31 +72,35 @@
           <i
             class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:hidden"
             id="dd-icon"
-          >O</i>
+            >O</i
+          >
         </label>
       </header>
 
       <section
-        class="menu w-full h-dvh bg-ulblue fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 text-3xl text-uwhite lg:hidden transition-all duration-700"
+        class="menu w-full h-dvh bg-ulblue fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 text-uwhite transition-all duration-700"
       >
-        <a href="/index.html" class="hover:text-ublue text-4xl md:text-6xl">Home</a>
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl">Showcase</a>
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl">About</a>
+        <a href="/index.html" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl"
+          >Home</a
+        >
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl">Showcase</a>
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl">About</a>
         <a
           href=""
-          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10"
+          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10 lg:text-7xl"
           >Contact</a
         >
-        <label for="check" class="mt-11 md:mt-24">
+        <label for="check" class="mt-11 md:mt-24 lg:mt-5">
           <i
-            class="fa-solid fa-circle-xmark text-4xl md:text-6xl lg:hidden"
+            class="fa-solid fa-circle-xmark text-4xl md:text-6xl lg:text-7xl"
             id="close-icon"
-          >X</i>
+            ></i
+          >
         </label>
       </section>
 
       <section
-        class="h-dvh w-full p-6 md:p-5 flex flex-col items-center justify-center space-y-7 relative"
+        class="h-dvh w-full p-6 md:p-5 flex flex-col items-center justify-start space-y-7 relative mt-[4.3rem] lg:mt-0"
       >
         <div
           class="w-44 h-64 bg-ulblue absolute rounded-full top-10 left-0 -translate-x-3 blur-3xl z-0 opacity-40"
@@ -95,16 +109,18 @@
           class="w-64 h-64 bg-ulblue absolute translate-x-36 translate-y-72 opacity-35 md:translate-y-48 top-62 right-5 blur-3xl"
         ></div>
         <img
-          class="absolute bottom-0 lg:left-14 lg:-x-72 z-0 w-[40rem]"
+          class="absolute bottom-0 left-14 lg:left-64 lg:-x-72 z-0 w-[40rem]"
           src="/public/assets/images/3.png"
           alt=""
         />
 
-        <h1 class="text-7xl md:text-9xl font-bold md:w-10/12 text-center z-10">
+        <h1
+          class="text-7xl md:text-[6rem] font-bold md:w-9/12 text-center z-10"
+        >
           From <span class="text-uorange">Vision</span> to
           <span class="text-uorange">Ultra-Reality</span>
         </h1>
-        <p class="text-center text-lg z-10 max-w-2xl">
+        <p class="text-center text-lg z-10 max-w-xl">
           Branding, Software, Design, Printing - we solve problems and create
           future, pixel by pixel
         </p>
@@ -116,36 +132,55 @@
             class="fa-solid fa-arrow-up-right-from-square hover:text-uorange"
           ></i
         ></a>
-        <!-- <label for="check">
-          <i
-            class="fa-solid fa-circle-chevron-down text-4xl lg:hidden fixed bottom-3"
-            id="dd-icon"
-          >O</i>
-        </label> -->
       </section>
 
-      <section class="w-full px-6 py-14 md:p-5 flex flex-col items-center justify-center space-y-7 relative">
-        <h2 class="text-4xl">Our Services</h2>
-        <div class="flex flex-col w-full gap-7">
-          <div class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9">
+      <section
+        class="w-full px-6 py-14 md:py-16 flex flex-col items-center justify-center space-y-7 relative bg-uorange rounded-t-[4rem] overflow-x-scroll"
+      >
+        <h2
+          class="py-4 px-7 border-2 rounded-full text-xl hover:border-uorange hover:text-uorange transition duration-700 z-10 float-end"
+        >
+          Our Services
+          <i
+            class="fa-solid fa-arrow-up-right-from-square hover:text-uorange"
+          ></i>
+        </h2>
+        <div class="flex flex-col lg:flex-row w-full lg:h-dvh gap-7">
+          <div
+            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
+          >
             <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
             <h3 class="text-3xl">Graphics Design</h3>
-            <p class="text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-lg text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
-          <div class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9">
+          <div
+            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
+          >
             <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
             <h3 class="text-3xl">Software Development</h3>
-            <p class="text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-lg text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
-          <div class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9">
+          <div
+            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
+          >
             <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
             <h3 class="text-3xl">Printing</h3>
-            <p class="text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-lg text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
-          <div class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9">
+          <div
+            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
+          >
             <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
             <h3 class="text-3xl"></h3>
-            <p class="text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-lg text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
         </div>
       </section>
