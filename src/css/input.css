@@ -17,4 +17,9 @@
 @font-face {
     font-family: "Actay";
     src: url("/public/assets/fonts/ActayWide-Bold.otf");
-  }
+}
+
+.scroller::-webkit-scrollbar{
+  width: 1px;
+  height: 1px;
+}

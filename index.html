@@ -33,13 +33,14 @@
   </head>
   <body>
     <main class="bg-ublue relative overflow-hidden">
-      <div class="lg:fixed lg:top-8 lg:right-40 lg:z-[1000] lg:bg-uorange lg:w-20 lg:h-20 lg:rounded-full lg:flex lg:justify-center lg:items-center lg:cursor-pointer lg:border-2 lg:border-uorange lg:hover:border-uwhite lg:transition-all lg:duration-700">
+      <div
+        class="lg:fixed lg:top-8 lg:right-40 lg:z-[1000] lg:bg-uorange lg:w-20 lg:h-20 lg:rounded-full lg:flex lg:justify-center lg:items-center lg:cursor-pointer lg:border-2 lg:border-uorange lg:hover:border-uwhite lg:transition-all lg:duration-700"
+      >
         <label for="check">
           <i
             class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:text-4xl lg:cursor-pointer"
             id="dd-icon"
-            ></i
-          >
+          ></i>
         </label>
       </div>
 
@@ -72,30 +73,40 @@
           <i
             class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:hidden"
             id="dd-icon"
-            >O</i
-          >
+          ></i>
         </label>
       </header>
 
       <section
-        class="menu w-full h-dvh bg-ulblue fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 text-uwhite transition-all duration-700"
+        class="menu w-full h-dvh bg-ulblue bg-[url('/public/assets/images/33.png')] bg-no-repeat bg-cover fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-9 text-uwhite transition-all duration-700"
       >
-        <a href="/index.html" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl"
-          >Home</a
+        <div
+          class="w-44 h-64 bg-uorange absolute rounded-full top-10 left-0 -translate-x-3 blur-3xl z-0 opacity-40"
+        ></div>
+        <div
+          class="w-64 h-64 bg-uorange absolute translate-x-36 translate-y-72 opacity-35 md:translate-y-48 top-62 right-5 blur-3xl"
+        ></div>
+        <a
+          href="/index.html"
+          class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+          ><sup>01</sup> Home</a
         >
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl">Showcase</a>
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl">About</a>
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+          ><sup class="">02</sup> Showcase</a
+        >
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+          ><sup>03</sup> About</a
+        >
         <a
           href=""
-          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10 lg:text-7xl"
+          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10 lg:text-3xl"
           >Contact</a
         >
         <label for="check" class="mt-11 md:mt-24 lg:mt-5">
           <i
-            class="fa-solid fa-circle-xmark text-4xl md:text-6xl lg:text-7xl"
+            class="fa-solid fa-circle-xmark text-4xl md:text-6xl lg:text-7xl lg:cursor-pointer lg:hover:text-ublue lg:hover:scale-110 transition-all duration-700"
             id="close-icon"
-            ></i
-          >
+          ></i>
         </label>
       </section>
 
@@ -134,58 +145,80 @@
         ></a>
       </section>
 
-      <section
-        class="w-full px-6 py-14 md:py-16 flex flex-col items-center justify-center space-y-7 relative bg-uorange rounded-t-[4rem] overflow-x-scroll"
-      >
-        <h2
-          class="py-4 px-7 border-2 rounded-full text-xl hover:border-uorange hover:text-uorange transition duration-700 z-10 float-end"
+      <section class="px-11 pt-20 pb-11 flex gap-6 overflow-x-auto scroller select-none">
+        <div
+          class="min-w-[18rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-9 flex flex-col justify-between mr-3 select-none"
         >
-          Our Services
-          <i
-            class="fa-solid fa-arrow-up-right-from-square hover:text-uorange"
-          ></i>
-        </h2>
-        <div class="flex flex-col lg:flex-row w-full lg:h-dvh gap-7">
-          <div
-            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
-          >
-            <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
-            <h3 class="text-3xl">Graphics Design</h3>
-            <p class="text-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <h3 class="uppercase text-center text-3xl">Services</h3>
+          <div class="">
+            <p class="mb-3 text-sm text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              obcaecati dignissimos autem quisquam necessitatibus alias numquam
+              incidunt ullam. Voluptatum ipsa vitae a saepe impedit quam
+              suscipit nam dolores aliquam corrupti?
             </p>
+            <button
+              class="py-4 px-7 border-2 rounded-full text-xl cursor-default"
+            >
+              ->
+            </button>
           </div>
+        </div>
+
+        <div
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none"
+        >
           <div
-            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
-          >
-            <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
-            <h3 class="text-3xl">Software Development</h3>
-            <p class="text-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
+            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+          ></div>
+          <h3 class="uppercase text-center text-3xl mb-3">Graphic Design</h3>
+          <p class="px-10 text-justify text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            sit nisi iure atque molestiae.
+          </p>
+        </div>
+
+        <div
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none"
+        >
           <div
-            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
-          >
-            <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
-            <h3 class="text-3xl">Printing</h3>
-            <p class="text-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
+            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+          ></div>
+          <h3 class="uppercase text-center text-3xl mb-3">Branding</h3>
+          <p class="px-10 text-justify text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            sit nisi iure atque molestiae.
+          </p>
+        </div>
+
+        <div
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3"
+        >
           <div
-            class="w-full h-96 p-4 shadow-md bg-ublue border-2 border-uorange rounded-2xl flex flex-col justify-center items-center gap-9"
-          >
-            <div class="w-1/3 h-1/3 border-2 border-uorange rounded-full"></div>
-            <h3 class="text-3xl"></h3>
-            <p class="text-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
+            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+          ></div>
+          <h3 class="uppercase text-center text-3xl mb-3">Printing</h3>
+          <p class="px-10 text-justify text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            sit nisi iure atque molestiae.
+          </p>
+        </div>
+
+        <div
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3"
+        >
+          <div
+            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+          ></div>
+          <h3 class="uppercase text-center text-3xl mb-3">Software Development</h3>
+          <p class="px-10 text-justify text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            sit nisi iure atque molestiae.
+          </p>
         </div>
       </section>
 
-      <footer></footer>
+      <footer class="border-t-2 p-3 mx-5"></footer>
     </main>
     <script src="/src/js/app.js"></script>
   </body>
