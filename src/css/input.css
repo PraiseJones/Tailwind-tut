@@ -23,3 +23,9 @@
   width: 1px;
   height: 1px;
 }
+
+@layer utilities {
+  .animate-delay-2s{
+    animation-delay: 2s;
+  }
+}

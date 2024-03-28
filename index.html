@@ -28,6 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Ultra Inc.</title>
   </head>
@@ -38,7 +39,7 @@
       >
         <label for="check">
           <i
-            class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:text-4xl lg:cursor-pointer"
+            class="fi fi-br-bars-staggered text-4xl md:text-6xl lg:text-4xl lg:cursor-pointer"
             id="dd-icon"
           ></i>
         </label>
@@ -71,35 +72,29 @@
         <input type="checkbox" name="checkbox" id="check" class="hidden" />
         <label for="check">
           <i
-            class="fa-solid fa-circle-chevron-down text-4xl md:text-6xl lg:hidden"
+            class="fi fi-br-bars-staggered text-4xl md:text-6xl lg:hidden"
             id="dd-icon"
           ></i>
         </label>
       </header>
 
       <section
-        class="menu w-full h-dvh bg-ulblue bg-[url('/public/assets/images/33.png')] bg-no-repeat bg-cover fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-9 text-uwhite transition-all duration-700"
+        class="menu w-full h-dvh bg-ulblue bg-[url(/public/assets/images/img_bg.webp)] bg-cover bg-no-repeat fixed z-[1000] top-full flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-4 text-uwhite transition-all duration-700"
       >
-        <div
-          class="w-44 h-64 bg-uorange absolute rounded-full top-10 left-0 -translate-x-3 blur-3xl z-0 opacity-40"
-        ></div>
-        <div
-          class="w-64 h-64 bg-uorange absolute translate-x-36 translate-y-72 opacity-35 md:translate-y-48 top-62 right-5 blur-3xl"
-        ></div>
         <a
           href="/index.html"
-          class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+          class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl"
           ><sup>01</sup> Home</a
         >
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl"
           ><sup class="">02</sup> Showcase</a
         >
-        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-5xl"
+        <a href="" class="hover:text-ublue text-4xl md:text-6xl lg:text-7xl"
           ><sup>03</sup> About</a
         >
         <a
           href=""
-          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10 lg:text-3xl"
+          class="py-4 px-7 border-2 md:border-4 rounded-full text-4xl md:text-6xl hover:border-ublue hover:text-ublue transition duration-700 z-10 lg:text-xl"
           >Contact</a
         >
         <label for="check" class="mt-11 md:mt-24 lg:mt-5">
@@ -111,27 +106,27 @@
       </section>
 
       <section
-        class="h-dvh w-full p-6 md:p-5 flex flex-col items-center justify-start space-y-7 relative mt-[4.3rem] lg:mt-0"
+        class="h-dvh w-full p-6 md:p-5 flex flex-col items-center justify-start space-y-4 relative mt-[4.3rem] lg:mt-0"
       >
         <div
-          class="w-44 h-64 bg-ulblue absolute rounded-full top-10 left-0 -translate-x-3 blur-3xl z-0 opacity-40"
+          class="w-44 h-64 bg-ulblue absolute rounded-full top-10 left-0 -translate-x-3 filter blur-3xl z-0 opacity-40 animate-movel"
         ></div>
         <div
-          class="w-64 h-64 bg-ulblue absolute translate-x-36 translate-y-72 opacity-35 md:translate-y-48 top-62 right-5 blur-3xl"
+          class="w-64 h-64 bg-ulblue absolute opacity-50 md:translate-y-48 top-62 right-5 filter blur-3xl animate-move"
         ></div>
-        <img
+        <!-- <img
           class="absolute bottom-0 left-14 lg:left-64 lg:-x-72 z-0 w-[40rem]"
           src="/public/assets/images/3.png"
           alt=""
-        />
+        /> -->
 
         <h1
-          class="text-7xl md:text-[6rem] font-bold md:w-9/12 text-center z-10"
+          class="text-7xl md:text-[6rem] font-bold md:w-9/12 text-center z-10 lg:text-[8.2rem]"
         >
           From <span class="text-uorange">Vision</span> to
           <span class="text-uorange">Ultra-Reality</span>
         </h1>
-        <p class="text-center text-lg z-10 max-w-xl">
+        <p class="text-center text-lg lg:text-sm z-10 max-w-xl">
           Branding, Software, Design, Printing - we solve problems and create
           future, pixel by pixel
         </p>
@@ -157,19 +152,15 @@
               incidunt ullam. Voluptatum ipsa vitae a saepe impedit quam
               suscipit nam dolores aliquam corrupti?
             </p>
-            <button
-              class="py-4 px-7 border-2 rounded-full text-xl cursor-default"
-            >
-              ->
-            </button>
+            <i class="fi fi-rr-arrow-right py-4 px-7 border-2 rounded-full text-xl"></i>
           </div>
         </div>
 
         <div
-          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none"
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none cursor-grab"
         >
           <div
-            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+            class="bg-[url(/public/assets/images/g1.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
           ></div>
           <h3 class="uppercase text-center text-3xl mb-3">Graphic Design</h3>
           <p class="px-10 text-justify text-sm">
@@ -179,10 +170,10 @@
         </div>
 
         <div
-          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none"
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 select-none cursor-grab"
         >
           <div
-            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+            class="bg-[url(/public/assets/images/b1.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
           ></div>
           <h3 class="uppercase text-center text-3xl mb-3">Branding</h3>
           <p class="px-10 text-justify text-sm">
@@ -192,10 +183,10 @@
         </div>
 
         <div
-          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3"
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 cursor-grab"
         >
           <div
-            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+            class="bg-[url(/public/assets/images/p1.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
           ></div>
           <h3 class="uppercase text-center text-3xl mb-3">Printing</h3>
           <p class="px-10 text-justify text-sm">
@@ -205,10 +196,10 @@
         </div>
 
         <div
-          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3"
+          class="min-w-[24rem] h-[28rem] bg-gradient-to-br from-ulblue to-ublue rounded-3xl p-3 cursor-grab"
         >
           <div
-            class="bg-[url(/public/assets/images/23.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
+            class="bg-[url(/public/assets/images/s2.jpg)] bg-cover bg-no-repeat w-full h-[60%] rounded-3xl overflow-hidden mb-7"
           ></div>
           <h3 class="uppercase text-center text-3xl mb-3">Software Development</h3>
           <p class="px-10 text-justify text-sm">
@@ -218,7 +209,13 @@
         </div>
       </section>
 
-      <footer class="border-t-2 p-3 mx-5"></footer>
+      <section>
+        <h3>Projects</h3>
+      </section>
+
+      <footer class="border-t-2 p-3 mx-5">
+        <p>Made with Love</p>
+      </footer>
     </main>
     <script src="/src/js/app.js"></script>
   </body>

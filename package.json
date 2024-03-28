@@ -6,6 +6,7 @@
     "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "tailwindcss-animatecss": "^3.0.5"
   }
 }

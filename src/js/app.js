@@ -35,11 +35,14 @@ closeIcon.addEventListener("click", () => {
   menu.classList.add('top-full');
 });
 
-openIcon.addEventListener("click", () => {
-  const menu = document.querySelector('.menu');
-  menu.classList.remove('top-full');
-  menu.classList.add('top-0');
+openIcon.forEach(icon => {
+  icon.addEventListener("click", () => {
+    const menu = document.querySelector('.menu');
+    menu.classList.remove('top-full');
+    menu.classList.add('top-0');
+  });
 });
+
 
 //scroll functionality
 

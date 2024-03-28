@@ -17,8 +17,42 @@ module.exports = {
       },
       fontFamily: {
         Actay: ["Actay", "sans"],
+      },
+      animation:{
+        move: "move 7s infinite both",
+        movel: "movel 4s infinite both"
+      },
+      keyframes: {
+        move: {
+          "from": {
+            transform: "translate(0, 0) scale(1)"
+          },
+          "30%": {
+            transform: "translate(8rem, 9rem) scale(1.15)"
+          },
+          "60%":{
+            transform: "translate(-13rem, 20rem) scale(1.5)"
+          },
+          "to": {
+            transform: "translate(0, 0) scale(1)"
+          }
+        },
+        movel: {
+          "from": {
+            transform: "translate(0, 0) scale(1)"
+          },
+          "30%": {
+            transform: "translate(3.75rem, -2rem) scale(1.2)"
+          },
+          "60%": {
+            transform: "translate(8.75rem, 2rem) scale(1.2)"
+          },
+          "to": {
+            transform: "translate(0, 0) scale(1)"
+          }
+        }
       }
     },
   },
-  plugins: [require('tailwindcss-animatecss')],
+  plugins: [],
 };
